@@ -9,6 +9,11 @@ title: Hello, it's me
 如何使用自定义的文字链接ob页面：[[CI、CD|自定义的名字]]
 图片：
 ![[_site/assets/20220902105531.png]]
+
+<img src='/assets/20220902105531.png'/>
+
+<img src='/assets/image.jpg'/>
+
 ![[assets/image.jpg]]
 
 

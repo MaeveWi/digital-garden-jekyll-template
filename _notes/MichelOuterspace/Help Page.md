@@ -1,5 +1,5 @@
 ---
-title: Your first seed
+title: Help Page
 ---
 
 ## Welcome! This is help page🌱 

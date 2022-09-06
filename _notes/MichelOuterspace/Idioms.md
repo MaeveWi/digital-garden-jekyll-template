@@ -6,3 +6,5 @@
 
 **There are many different ways to skin this cat**, ranging from Apache or Nginx configuration, using something like rack-reverse-proxy to **a slew of** other similar solutions, **each with their own pros and cons**.
 
+Pylint **ships with** three additional tools:
+

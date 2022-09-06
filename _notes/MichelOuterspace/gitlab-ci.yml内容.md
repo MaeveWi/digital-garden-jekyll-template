@@ -1,3 +1,38 @@
+## Examples:
+```yml
+test:
+  stage: test
+  script:
+    - curl -X POST http://**.**.**.**:****/jenkins/job/fas_api_test/buildWithParameters --user ${JENKINS_USER}:${JENKINS_TOKEN}
+  only:
+    - master
+```
+ 在test阶段 执行jenkins job，执行fas_api_test
+
+```yml
+stages:
+  - deploy
+  - dockerb
+deploy:
+  stage: deploy
+  script:
+    - devpi use http://**.**.**.**:****/root/pypi
+    - devpi login root --password=root
+    - devpi use root/dev
+    - devpi upload --no-vcs
+  only:
+    - master
+dockerb:
+  stage: dockerb
+  script:
+    - docker build -t harbor.hub.*****.com/xiaobo/python:latest .
+  only:
+    - master
+```
+在depoly阶段上传代码，deploy到devpi私服；在dockerb阶段，build出镜像image，供其他项目（fas_api_test）使用
+
+什么是[[devpi]]
+
 
 ### 管道（pipeline）
 

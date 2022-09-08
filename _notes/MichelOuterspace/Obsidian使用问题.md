@@ -9,5 +9,5 @@
 		4. <img src="\assets\image.jpg" style="zoom: 10%"/>
 		5. ![test](https://www.notion.so/Life-Wiki-178a97ac39004465af1a32ad30d88375#7bdcd3cffa454ce8aaeef25959833d6b)
 	
-	 -- 可能的解决方式：1. 使用图床， 2. 使用插件：Obsidian-local-img-plugin
+	 -- 可能的解决方式：1. 使用图床， 2. 使用插件：[Obsidian-local-img-plugin](https://github.com/talengu/obsidian-local-img-plugin)
 3. ⭕html代码块里面的页面链接，无法产生双链，在graph里无法展示

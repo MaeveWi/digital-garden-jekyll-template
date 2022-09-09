@@ -2,7 +2,7 @@
 title: pre-commit
 ---
 ## What
-[git hooks](git%20hooks.md)中的一个钩子。
+[[Git hooks]]中的一个钩子。
 
 也是一个同名工具项目，用于管理和维护多语言Hooks的框架。pre-commit框架，随着发展，已经不单单只能用于git hooks的pre-commit阶段，而是能作用于所有git hooks的所有阶段。
 
@@ -38,9 +38,7 @@ title: pre-commit
     pre-commit install
     ```
     
-4.  对所有文件进行一次检查 
-5. 
-6. (可选)  
+4.  对所有文件进行一次检查 (可选)  
     配置设置好后，默认是需要`git commit`命令来出发调用的，只会检查`git commit`中变更的文件。对所有文件进行检查：
     
     ```
@@ -54,13 +52,13 @@ title: pre-commit
 # 设置默认的阶段为push，只在提交时进行检查
 default_stages: [push]
 repos:
-	#git clone的存储库url
+  #git clone的存储库url
   - repo: https://github.com/pre-commit/pre-commit-hooks
-	#git clone要拉取的tag或者revision
+    #git clone要拉取的tag或者revision
     rev: v2.4.0
     #这个库中具体的哪些hooks脚本：
     hooks:
-	    #hooks下层又有多个配置：id,name,args,stages等，具体看官方文档
+        #hooks下层又有多个配置：id,name,args,stages等，具体看官方文档
       - id: check-yaml  #Attempts to load all yaml files to verify syntax.
       - id: end-of-file-fixer #Makes sure files end in a newline and only a newline.
       - id: trailing-whitespace #Trims trailing whitespace
@@ -78,14 +76,13 @@ repos:
 
 首先，是顶层的全局配置，配置项有如下这些：
 
-- **repos：**（必需）最重要的核心配置，用来告诉pre-commit从哪里获取钩子的代码。pre-commit官方支持的所有Hooks：==[Hooks](https://pre-commit.com/hooks.html)
+- **repos：**（必需）最重要的核心配置，用来告诉pre-commit从哪里获取钩子的代码。pre-commit官方支持的所有Hooks：==[Hooks](https://pre-commit.com/hooks.html)==
 - **default_stages：**（可选）默认值：all stages，设置覆盖的默认stages。只覆盖没有设置stages的单个钩子。
 - default_language_version：（可选）从语言到应该用于该语言的默认language_version的映射。这将只覆盖没有设置language_version的单个钩子。默认为：{}
    ```yaml
    # 设置默认的语言版本，你也可以在每个repos中单独设置language_version
 	default_language_version:
-	  python: python3.7
-   
+	  python: python3.7 
    ```
 - files：（可选）全局文件包含，正则匹配模版，1.21.0新配置，默认值：""
 - exclude：（可选）全局文件排除，正则匹配模版，1.1.0版本新配置，默认值：^$

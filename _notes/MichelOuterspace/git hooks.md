@@ -1,8 +1,10 @@
 ## What
-Git hooks就是Git在特定事件（比如commit、push、receive）发生之前或者之后执行的脚本。类似于监听器、触发器这样的功能
+Git hooks就是Git在特定事件（比如commit、push、receive）发生之前或者之后执行的脚本。类似于监听器、触发器这样的功能。==[官方文档](https://git-scm.com/docs/githooks)==
 按照Git hooks脚本所在的位置可以分为：
 1. 本地Hooks或者说客户端Hooks：可以触发的事件如commit，merge
 2. 服务端Hooks：可以触发的时间比如receive
+
+
 
 ## 可以实现什么功能？
 每一个Git项目下都包含有.git/hooks 这个目录（本地和远程都是这样，把后缀.sample去掉，或者用列表中的名字新建一个文件，就可以把该脚本激活 绑定到特定的git行为上），这里面就是放置Hooks的地方。你可以在这个目录下自由定制Hooks的功能，实际工作中可以实现的功能比如：
@@ -13,7 +15,7 @@ Git hooks就是Git在特定事件（比如commit、push、receive）发生之前
 -   etc...
 
 ### 客户端钩子
-- **pre-commit（常用）**
+- **[pre-commit](pre-commit.md)（常用）**
 	- 在提交一个commit之前， **它用于检查即将提交的commit**。以确保这份提交中没有缺少什么东西、文件名是否符合规范、是否对这份提交进行了测试、代码风格是否符合团队要求等等。 这个脚本可以通过传递--no-verify参数而禁用，如果脚本运行失败（返回非零值），git提交就会被终止。  
 - prepare-commit-msg
 	- 脚本会在默认的提交信息准备完成后但编辑器尚未启动之前运行。 这个脚本的作用是用来编辑commit的默认提交说明。 该脚本有1~3个参数：包含提交说明文件的路径，commit类型（message, template, merge, squash），一个用于commit的SHA1值。这个脚本用的机会不是太多，主要是用于能自动生成commit message的情况。 不会因为--no-verify参数而禁用，如果脚本运行失败（返回非零值），git提交就会被终止。

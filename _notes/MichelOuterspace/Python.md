@@ -1,5 +1,11 @@
 python官方包索引：[[pypi]]
 
+安装或者升级包：
+>pip install -U pytest
+
+[[Decorators装饰器]]
+[[Function函数]]
+
 -   print
     
     ```python

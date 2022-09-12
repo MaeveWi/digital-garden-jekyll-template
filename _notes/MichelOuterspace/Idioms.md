@@ -8,3 +8,4 @@
 
 Pylint **ships with** three additional tools:
 
+But before diving deep into decorators let us understand some concepts that will **come in handy** in learning the decorators.  派上用场

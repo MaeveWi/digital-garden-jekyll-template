@@ -83,27 +83,12 @@ myFun(1,'a','b',first='Geeks', mid='for', last='Geeks')
 ```
 
 
-### Lambda匿名函数Anonymous functions
+### Lambda/Anonymous functions匿名函数
 **lambda** keyword is used to create anonymous functions.
-```python
-str1 = 'GeeksforGeeks'  
-
-# lambda returns a function object
-# function倒序并且大写String  
-rev_upper = lambda string: string.upper()[::-1]  
-print(rev_upper(str1))
-```
-
-####  Lambda Function with if-else
-```python
-Max = lambda a, b: a if (a > b) else b   
-print(Max(1, 2))
-```
-
-
+详见[[lambda函数]]
 
 ### Function的Docstring
-定义function第一行下面的字符串，通常用来说明function的用处用法，可以使用```.__doc__```查看
+定义function第一行下面的字符串，通常用来说明function的用处用法，可以使用`.__doc__`([[魔法 隐藏方法]]）查看
 ```python
 def evenOdd(x):  
   """This is function Docstring:  

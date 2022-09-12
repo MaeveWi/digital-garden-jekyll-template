@@ -43,8 +43,8 @@ import math
 # taken by any function.
 def calculate_time(func):
     
-    # if function takes any arguments,
-    # can be added like this.
+# if function takes any arguments,
+# can be added like this.
     def inner1(*args, **kwargs):
         # storing time before function execution
         begin = time.time()
@@ -56,8 +56,8 @@ def calculate_time(func):
         print("Total time taken in : ", func.__name__, end - begin)
     return inner1
 
-# this can be added to any function present,
-# in this case to calculate a factorial 阶乘
+
+# factorial 阶乘
 @calculate_time
 def factorial(num):
     # sleep 2 seconds because it takes very less time
@@ -65,7 +65,7 @@ def factorial(num):
     time.sleep(2)
     print (math.factorial(num))
 
-# calling the function 阶乘.
+# calling the function
 factorial(10)
 ```
 #### Output

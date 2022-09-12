@@ -29,7 +29,6 @@ def student(name, age, a, className):
 student(a=0, age=11, name="wang", className="物理")
 ```
 
-===python的print 用```,```连接，不像java用```+```连接===
 
 ## 当用mutable object作为参数时：
 如果定义函数时，直接使用空list或者dictionary或者其他mutable object作为默认值：  
@@ -84,7 +83,7 @@ myFun(1,'a','b',first='Geeks', mid='for', last='Geeks')
 ```
 
 
-### 匿名函数Anonymous functions
+### Lambda匿名函数Anonymous functions
 **lambda** keyword is used to create anonymous functions.
 ```python
 str1 = 'GeeksforGeeks'  
@@ -94,6 +93,13 @@ str1 = 'GeeksforGeeks'
 rev_upper = lambda string: string.upper()[::-1]  
 print(rev_upper(str1))
 ```
+
+####  Lambda Function with if-else
+```python
+Max = lambda a, b: a if (a > b) else b   
+print(Max(1, 2))
+```
+
 
 
 ### Function的Docstring

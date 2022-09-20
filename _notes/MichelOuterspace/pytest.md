@@ -1,5 +1,5 @@
 ## What
-一个python测试框架。
+一个python测试框架。pytest 实际上是通过调用一些插件的指定hooks来实现配置、收集、运行和报告
 
 可以跳过用例和失败用例重跑。可以和所有自动化测试工具selenium，appium结合，实现web自动化，接口自动化，app自动化。
 
@@ -9,7 +9,7 @@
 - pytest-ordering 改变测试用例执行顺序
 - pytest-rerunfailures 重跑错误用例
 - allure-pytest 
-## 
+
 
 ## 安装
 pip install -U pytest

@@ -50,5 +50,13 @@ print(Ob3)
 
 还有其他的operators魔法方法见[魔法 隐藏方法](魔法%20隐藏方法.md)
 
+## operators function运算符方法
+python还有一些预置的数学、逻辑、关系、比特计算方法，在operator模块。如：`add(a,b)`, `sub(a,b)`,`mul(a,b)`
+```python
+import operator  
+  
+a,b = 3,4  
+print(operator.add(a, b))
+```
 
 

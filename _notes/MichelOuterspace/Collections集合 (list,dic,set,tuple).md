@@ -155,5 +155,8 @@
         valuesList = [key for key in myDict]
         ```
         
-    -   Set (**Python Set can have only Unique Values**)
+    -   Set (**unordered，Python Set can have only Unique Values**)
+        与list相比，使用集合的主要优点是它具有高度优化的方法来检查集合中是否包含特定元素
+        ```python
         
+        ```

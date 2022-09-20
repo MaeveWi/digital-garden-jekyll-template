@@ -3,21 +3,39 @@ python官方包索引：[[pypi]]
 安装或者升级包：
 `pip install -U pytest`
 
-[[input, output]]
+- [[input, output]]
+- [[Data Type]]
+- [[global and local variables]]
+- [[Collections集合 (list,dic,set,tuple)]]
+- [[operators运算符]]
+- [[Function函数]]
+- [[Generators生成器函数 and yield]]
+- [[lambda函数]]
+- [[Closure闭包]]
+- [[Decorators装饰器]]
+- [[魔法 隐藏方法]]
+- [[Class类]]
+- [[OOP面向对象编程]]
+- [[f字符串格式设置]]
+````python
+for _ in range(3):
+	print(_)
+````
+`_`就是个占位符
 
-[[Data Type]]
+pass 占位
+break 直接跳出loop
+continue loop中用来跳过当前循环剩下的代码
 
-[[Collections]]
+re库 按照正则匹配字符串
+re.match 返回match对象，用group(), groups()获取具体
+re.search
+re.findall
+re.finditer
 
-[[operators运算符]]
-
-[[Function函数]]
-
-[[lambda函数]]
-
-[[Decorators装饰器]]
-
-[[魔法 隐藏方法]]
+json库
+json.load() 字符串转换成json
+json.dump() json转换成字符串
 
 #### range()
 ```python

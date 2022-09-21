@@ -1,0 +1,3 @@
+pass 占位
+break 直接跳出loop
+continue loop中用来跳过当前循环剩下的代码

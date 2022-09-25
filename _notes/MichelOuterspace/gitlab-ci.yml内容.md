@@ -3,7 +3,7 @@
 test:
   stage: test
   script:
-    - curl -X POST http://**.**.**.**:****/jenkins/job/fas_api_test/buildWithParameters --user ${JENKINS_USER}:${JENKINS_TOKEN}
+    - curl -X POST http://**.**.**.**:****/jenkins/job/***_api_test/buildWithParameters --user ${JENKINS_USER}:${JENKINS_TOKEN}
   only:
     - master
 ```
@@ -31,7 +31,7 @@ dockerb:
 ```
 在depoly阶段上传代码，deploy到devpi私服；在dockerb阶段，build出镜像image，供其他项目（fas_api_test）使用
 
-什么是[[devpi]]
+## [[devpi 私有pip源系统|什么是devpi？]]
 
 
 ### 管道（pipeline）

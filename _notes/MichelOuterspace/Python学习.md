@@ -2,7 +2,6 @@ python官方包索引：[[pypi]]
 
 安装或者升级包：
 `pip install -U pytest`
-![](https://www.notion.so/Selenium-8ed2c65c7828487596c7f43726d2ade1#70cd4beb248e460d9d2619acd001eb2a)
 
 - [[input, output]]
 - [[Control flow]]
@@ -17,8 +16,10 @@ python官方包索引：[[pypi]]
 - [[Closure闭包]]
 - [[Decorators装饰器]]
 - [[魔法 隐藏方法]]
-- [[Class类]]
+- [[Class类（静态变量和实例变量、静态方法和类方法）]]
+- [[Abstract Class抽象类]]
 - [[OOP面向对象编程]]
+- [[File handling文件处理]]
 - [[f字符串格式设置]]
 - [[序列化和反序列化（json转换）]]
 - [[Range()函数]]

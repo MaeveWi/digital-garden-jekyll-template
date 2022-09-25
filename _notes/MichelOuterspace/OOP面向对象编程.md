@@ -1,5 +1,5 @@
 - Class and Objects
-	- [[Class类]]
+	- [[Class类（静态变量和实例变量、静态方法和类方法）]]
 - Encapsulation 封装
 - Inheritance 继承
 - Polymorphism 多态

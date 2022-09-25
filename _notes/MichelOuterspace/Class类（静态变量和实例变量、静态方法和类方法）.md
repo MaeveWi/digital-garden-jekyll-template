@@ -85,10 +85,13 @@ print(steve.get_color())
 
 
 ## Class Method and StaticMethod类方法和静态方法
-- Class method使用@classmethod装饰器进行装饰，第一个参数默认需要传递当前class: cls；Static method使用@staticmethod进行装饰
+- **Class method**使用@classmethod装饰器进行装饰，第一个参数默认需要传递当前class: cls；
 - Class method是绑定到类，而不是类的实例；它可以修改类的状态，适用于类的所有实例
+
+- **Static method**使用@staticmethod进行装饰，没有默认参数
 - Static method也是绑定到类，而不是类的实例，但他不能修改类的状态。通常用于utility 方法
-- static和class method都可以通过类名来调用，可以不需要对类进行实例化再调用其中的函数
+
+- Static和Class method都可以通过类名来调用，可以不需要对类进行实例化再调用其中的函数
 ```python
 class C(object):  
     @classmethod  

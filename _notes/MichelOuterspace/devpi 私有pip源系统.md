@@ -1,7 +1,11 @@
 ## What
 [[pypi]]私有服务系统，一个pypi server 和 packaging、testing、release工具  
 
-文档：[doc](https://docs.pytest.org/en/latest/)
+文档：[doc](https://devpi.net/docs/devpi/devpi/stable/+d/quickstart-pypimirror.html)
+
+[搭建本地私有pip源 教程](https://cloud.tencent.com/developer/article/2087694)
+
+[[永久修改pip镜像源配置]]
 
 ## Why
 python有非常多的第三方包，这些包可以通过pip install安装。  而对于一个多pythoner团队，内部私有pypi库是非常重要的：
@@ -14,6 +18,8 @@ python有非常多的第三方包，这些包可以通过pip install安装。  �
 
 ## How
 从devpi  pip install python包时，devpi会自动从其他（默认官方）服务器下载python包，并缓存下来，当它处于离线状态时，会直接将缓存中的包反馈给你。
+devpi mirror会从devpi master同步包下来，devpi master是从https://pypi.org官方服务器下载包
+
 
 #### 设置镜像仓库的镜像源，如豆瓣源、清华源：
 

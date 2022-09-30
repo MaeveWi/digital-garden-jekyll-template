@@ -1,8 +1,9 @@
 ---
 |名称|《》|
 |---|---|
-|Author|   |
-|Status|   |
+|🙎‍♀️ Author  |   |
+| Status  |   |
+| Date Finished   |    |
 |Score | ⭐⭐⭐⭐⭐  |
 |Type  |   |
 |Summary|   |
